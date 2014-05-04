@@ -1,0 +1,29 @@
+{
+  "name": "slatejs",
+  "version": "0.1.0",
+  "description": "Slate.js is an open-source web framework to develop modular HTML5 web apps in JavaScript.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashish-chopra/slatejs.git"
+  },
+  "keywords": [
+    "HTML5",
+    "Modular",
+    "design",
+    "JavaScript",
+    "Sandbox"
+  ],
+  "author": "Ashish Chopra",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/ashish-chopra/slatejs/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "grunt-contrib-concat": "~0.4.0"
+  }
+}
