@@ -22,7 +22,8 @@ module.exports = function(grunt) {
     concat: {
     	  options: {
     	    // define a string to put between each file in the concatenated output
-    	    separator: ';'
+    	    separator: "\n\n",
+            banner: "/*\n* Slate.js\n*\n*\n* Copyright (c) 2014 'Ashish Chopra'\n* Licensed under the MIT license.\n*/\n\n"
     	  },
     	  dist: {
     	    // the files to concatenate
