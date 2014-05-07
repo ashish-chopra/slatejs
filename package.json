@@ -1,5 +1,5 @@
 {
-  "name": "slatejs",
+  "name": "slate",
   "version": "0.1.0",
   "description": "Slate.js is an open-source web framework to develop modular HTML5 web apps in JavaScript.",
   "main": "Gruntfile.js",
@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "grunt": "~0.4.4",
-    "grunt-contrib-concat": "~0.4.0"
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-jshint": "~0.10.0"
   }
 }
