@@ -11,7 +11,7 @@ In order to use it directly from source, you may first require to build it. It's
 
     >$ git clone https://github.com/ashish-chopra/slatejs.git
 
-Then browse to `slatejs` doler in command line and then type
+Then browse to `slatejs` folder in command line and then type
 
     >$ npm install -g grunt-cli
     >$ npm install
