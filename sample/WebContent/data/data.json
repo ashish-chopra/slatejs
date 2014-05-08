@@ -1,0 +1,249 @@
+{
+"products" : [
+{
+"name" : "Freakonomics : The hidden side of Everything",
+"type" : "1",
+"description" : "Which is more dangerous, a gun or a swimming pool? What do schoolteachers and sumo wrestlers have in common? How much do parents really matter? These may not sound like typical questions for an economist to ask. But Steven D. Levitt is not a typical economist. He studies the riddles of everyday life - from cheating and crime to parenting and sports - and reaches conclusions that turn conventional wisdom on its head. Freakonomics is a groundbreaking collaboration between Levitt and Stephen J. Dubner, an award-winning author and journalist. They set out to explore the inner workings of a crack gang, the truth about real estate agents, the secrets of the Ku Klux Klan, and much more. Through forceful storytelling and wry insight, they show that economics is, at root, the study of incentives - how people get what they want or need, especially when other people want or need the same thing. Which is more dangerous, a gun or a swimming pool? What do schoolteachers and sumo wrestlers have in common? How much do parents really matter? These may not sound like typical questions for an economist to ask. But Steven D. Levitt is not a typical economist. He studies the riddles of everyday life - from cheating and crime to parenting and sports - and reaches conclusions that turn conventional wisdom on its head. Freakonomics is a groundbreaking collaboration between Levitt and Stephen J. Dubner, an award-winning author and journalist. They set out to explore the inner workings of a crack gang, the truth about real estate agents, the secrets of the Ku Klux Klan, and much more. Through forceful storytelling and wry insight, they show that economics is, at root, the study of incentives - how people get what they want or need, especially when other people want or need the same thing.",
+"ratings" : "4",
+"price" : "10.99",
+"publicationDate" : "25 December, 2009",
+"reviewCount" : "3",
+"author" : "Steven D. Levitt, Stephan J. Dubner",
+"imageUrl" : "images/freakonomics.jpg",
+"reviews" : [
+	{ "heading" : "Unconventional But Interesting", 
+	  "description" : "\"What is the similarity between real-estate agents and sumo wrestlers\"; \"Why do drug dealers still live with their mothers\"; \"What is the similarity between the KuKluxKlan and the crack agents\" - these questions sound intriguing, don't they? Levitt, a renowned (and rather unconventional) economist, in this book, has tried to unravel all these and many more mysteries through economic tools. He relies more on proven data rather than on people's opinion. In the book he presents some truly incredulous facts. Who would have thought that the dip in the crime rate in the 90's in the US was mainly due to legalized abortion rather than innovative police strategies? Similarly, the crack dealing business isn't as lucrative as it seems from outside. Most crack dealers only make like 3.5$ per hour. The author has accentuated the importance of incentives, information asymmetry, and conventional wisdom throughout the text. Language is extremely lucid and the writing style of Dubner grips the reader to the book. An awesome read!",
+	  "publishDate" : "22 April, 2012",
+	  "user" : "Shubham Gupta",
+	  "ratings" : "4"
+	},
+	{ "heading" : "Freakonomics, think differently!", 
+	  "description" : "I bought this one out of my love for quality reading. if you have slightest of knowldge in economics and you find pleasure in seeing things differently, this book will strike a chord with you. generalised,intelligent and insightful!",
+	  "publishDate" : "09 May, 2012",
+	  "user" : "Rajshree",
+	  "ratings" : "4.5"
+	},
+	{ "heading" : "A Phenomenon", 
+	  "description" : "This book takes everybody by storm. The way of explanation and writing is pleasure for a true reader. It is a delight for anyone who is interested in economics. It portrays the powerful and imaginative old fashioned economics in the hands of a boundlessly curious and superbly skilled practitioner. Read it once and you'll get an insight of the real economics. Bottom line: One of the finest works of all time.",
+	  "publishDate" : "9 February, 2012",
+	  "user" : "Rohit Manchanda",
+	  "ratings" : "4"
+	}],
+"comparisons" : [
+	{
+		"name" : "Amazon",
+		"totalRatings" : "1957",
+		"ratings" : "4",
+		"totalReviews" : "5",
+		"price" : "$10.80",
+		"url" : "http://www.amazon.com/Freakonomics-Economist-Explores-Hidden-Everything/dp/0060731338/ref=sr_1_1?ie=UTF8&qid=1341302087&sr=8-1&keywords=freakonomics"
+	},
+	{
+		"name" : "Barne & Noble",
+		"totalRatings" : "466",
+		"ratings" : "4",
+		"totalReviews" : "5",
+		"price" : "$10.79",
+		"url" : "http://www.barnesandnoble.com/w/freakonomics-steven-d-levitt/1100550563?ean=9780060731335"
+	},
+	{
+		"name" : "Flipkart",
+		"totalRatings" : "12",
+		"ratings" : "4",
+		"totalReviews" : "5",
+		"price" : "Rs.238",
+		"url" : "http://www.flipkart.com/freakonomics-0061956279/p/itmczyngjanymccy?pid=9780061956270&ref=59539122-c688-4125-8394-c1725931ddd8"
+	}]
+}, 
+{
+"name" : "The Art of Computer Programming",
+"author" : "Donald E. Knuth",
+"type" : "1",
+"description" : "This multivolume work is widely recognized as the definitive dscription of classical computer science. The first three volumes have for decades been an invaluable resource in programming theory and practice for students, researchers and practitioners alike.Countless readers have spoken about the profound influence of Knuth's work. Scientists have marveled at the beauty and elegance of his analysis, while ordinary programmers have successfully applied his cookbook solutions to their day-to-day problems. All have admired Knuth for the breadth, clarity, accuracy, and good humour of his books. Donald E. Knuth is known throughout the world for his pioneering work on algorithms and programming techniques, for his invention of the TEX and METAFONT systems for computer typesetting, and for his prolific and influential writing (26 books, 161 papers). Professor Emeritus of The Art of Computer Programming at Stanford University, he currently devotes full time to the completion of his seminal multivolume series on classical computer science, begun in 1962 when he was a graduate student at California Institute of Technology. Professor Knuth is the recipient of numerous awards and honors, including the ACM Turing Award, the Medal of Science presented by President Carter, the AMS Steele Prize for expository writing, and, in November, 1996, the prestigious Kyoto Prize for advanced technology. He lives on the Stanford campus with his wife, Jill.",
+"ratings" : "5",
+"price" : "70.99",
+"imageUrl" : "images/donald.jpg",
+"reviewCount" : "4",
+"reviews" : [
+	{ "heading" : "this is THE book for programmers", 
+	  "description" : "First, the price is very, very reasonable. Second, if there are two things software is known for, those can be the facts that software is always delivered late and full of bugs. Knuth will not teach you best programming practices like design patterns ( don't except those form the books ) but he will teach you one thing : how to write software you're confident in and about. No matter how good is your software architecture if its performance is bad or the algorithms are wrongly implemented, yes it is will be delivered late and buggy - there is no harder bug to discover than that in the logic of the program. So if you intend to write software you can be pride of, buy this book. But there are two warnings : 1/ if you are not very comfortable with mathematics, things may be tight but for the serious student or practitioner, i don't thing that's a reason not to get the book because without the maths these books wouldn't be trustworthy. If things get harder, try harder! 2/ the book - in my edition - uses the MIX hypothetical processor and lately MMIX - which is better. In case you have an experience with any assembly language that will be a plus but if you don't, no worries. Say you can program in C. Grab a simulator out there and start learning from it. In the mean time start implementing your own simulator. As you advance through the books, you'll discover new algorithms or make your owns and improve your simulator. Like that you'll learn faster and better. At least that is my approach while learning. In a nutshell, the journey will be long but very worth it! ",
+	  "publishDate" : "27 November, 2011",
+	  "user" : "Ntwali Bashgie",
+	  "ratings" : "5"
+	},
+	{
+		"heading" : "Must Be In Any CS Engineers Bookshelf",
+		"description" : "The quality of this book is unparalleled so is the author's imagination power. Extreme amount of thought has been exercised everywhere, from the first page of the chapter till the problems. Not to mention the problems are divided into levels for readers to grasp them according to their understanding. The hypothetical computer the author imagines, 'MIX' too has emulators which are easily available on the net. The links are provided in the author's site. All in all it's a must buy if anyone wishes no know something no other CS book can teach. read the book to find out what it is!",
+		"publishDate" : "15 June, 2012",
+	    "user" : "Debajyoti Das",
+	    "ratings" : "5" 
+	},
+	{
+		"heading" : "The Art Of Computer Programming: Fundamental Algorithms (Volume - 1)",
+		"description" : "The price is reasonable and the book covers all the best practices while developing a code for a particular application..the book is worth buying especially for computer science students.",
+		"publishDate" : "07 September, 2011",
+	    "user" : "Amit Bhati",
+	    "ratings" : "5" 
+	},
+	{
+		"heading" : "well first few pages and i am speech less about the standard of the book",
+		"description" : "First of all many thanks Flipkart for delivering it in a single day less than 24 hours !!! booked it from office in night around 10pm and next day 2 pm book was in my hand .. awesome coming to book This is very very interesting book as it gives a very different perspective to look at algos .. if you are not comfortable with maths you mind is going to spin .. but hold on don't ignore it for that reason .. end of teh day you want to be a good programmer right ? so its worth putting the effort right now under knuth's proper guidance .. u will never regret in life for the effort you will put on this book Happy reading.. ",
+		"publishDate" : "12 February, 2012",
+	    "user" : "Manish Ranjan",
+	    "ratings" : "5" 
+	}],
+"comparisons" : [
+	{
+		"name" : "Amazon",
+		"totalRatings" : "154",
+		"ratings" : "5",
+		"totalReviews" : "7",
+		"price" : "$187.50",
+		"url" : "http://www.amazon.com/Computer-Programming-Volumes-1-4A-Boxed/dp/0321751043/ref=sr_1_1?ie=UTF8&qid=1341300657&sr=8-1&keywords=art+of+computer+programming"
+	},
+	{
+		"name" : "Barne & Noble",
+		"totalRatings" : "15",
+		"ratings" : "4",
+		"totalReviews" : "5",
+		"price" : "$187.50",
+		"url" : "http://search.barnesandnoble.com/Art-of-Computer-Programming-Volumes-1-4A-Boxed-Set/Donald-E-Knuth/e/9780321751041"
+	},
+	{
+		"name" : "Flipkart",
+		"totalRatings" : "13",
+		"ratings" : "5",
+		"totalReviews" : "4",
+		"price" : "Rs.399",
+		"url" : "http://www.flipkart.com/art-computer-programming-8177587544/p/itmdyugtg8qg2znx?pid=9788177587548&ref=0b2f87d9-14ac-4ddf-9e72-643ed3b79750"
+	}]
+},
+{
+"name" : "Samsung Galaxy Tab 620",
+"author" : "Samsung Electronics",
+"type" : "2",
+"description" : "The Samsung Galaxy Tab 620 boasts of being the thinnest and the lightest 7 inch tablet in the market. This Android v3.2 (Honeycomb) based Samsung Tablet runs 1.2 GHz dual Core Processor on 1 GB RAM promising you efficient multi-tasking experience accompanied by reduced response time. The Mali-400 MP graphics processor ensures clear and sharp visuals. The Galaxy Tab 620 also known as Galaxy Tab 7.0 plus comes with 7 inch TFT LCD display supporting a resolution of 1024 x 600 pixels. This Samsung Galaxy Tab features a 2 megapixel secondary camera on top right of the bezel surrounding the screen apart from a 3 megapixel primary camera that is positioned on the top left on the backside along with an LED Flash. The primary camera is ready for HD recording at 30 fps with a resolution of 1280 x 720 pixels. This Tablet lets you experience high definition video and gaming with Full HD Playback. Additionally, this Samsung Tab supports geo-tagging. The 7 inch Galaxy Tab uses TouchWiz UX user interface for friendly and intuitive user experience. The TouchWiz UX offers you a customizable home screen allowing you to maintain all the frequently used applications and feeds at a distance of one touch. Additionally, this Android Tablet allows you to retrieve the commonly used applications from a mini tray on the home screen. TouchWiz UX gives you access to custom Samsung apps like AllShare, Media Hub, Social Hub, and Samsung Apps. The Samsung Tab has eliminated the need of using a headset or Bluetooth for making voice calls with integrated Receiver Mode.",
+"ratings" : "4.5",
+"price" : "22990",
+"imageUrl" : "images/samsung-tabs.jpeg",
+"reviewCount" : "3",
+"reviews" : [
+	{ "heading" : "The Best-tablet Smartphone", 
+	  "description" : "AWESOME! The earpiece on top of the phone was a much wanted feature for GSM calls. It has got USB Host (on-the-go): this feature enables you to plug in any USB device into the Tab; eg: you can plug in a pen-drive into the Tab and access its contents directly from the Tab. It has Wi-Fi Direct and Bluetooth 3.0. The dual-core 1.2ghz processor with Mali-400 gpu coupled with 4000mAh battery is a delight for resource and processing-power hungry users. TouchWizUX on Honeycomb is just cool. Samsung has also promised an Ice Cream Sandwich upgrade for it. Great going Samsung!",
+	  "publishDate" : "09 January, 2012",
+	  "user" : "Abhishek Mandal",
+	  "ratings" : "5"
+	},
+	{
+		"heading" : "Nice and Prestigious one for me..............",
+		"description" : "hi guys,last week only i bought this tablet according to me this tablet is best of all other tablet. The following are some reasons for going tab 620 then other: 1)front cam. is 2MP tat good for video call&chat 2)touch is very cool for using 3)UI is awesome even new user can easily get into it. 4)u can make calls & messeges like normal cellphone 5)GPRS is there but not in other tablets 6)7 inch only so that is very compatible  7)HD video record and LCD display these more then anything. 8)1GB RAM & 1.2Ghz speed tat make u feel like using a mini laptop 9)Hearing a music with headset is feeling like entering into the music heaven some of the cons:(however)  1)rear camera is only 3MP that not gud for its price tag. 2)while browsing u can't direct the link from one tab to another tab(like in laptop browser 'right clik-->open in new tab' u can't do tat in tab) ", 
+		"publishDate" : "17 January, 2012",
+	    "user" : "Selva Prabhu",
+	    "ratings" : "5" 
+	},
+	{
+		"heading" : "Good tablet phone",
+		"description" : "So for I used Symbian based smartphone and used mainly to read news and watching movies during my travel time (Every day I am spending ~2 Hours travelling). I searched for 7\" inch screen with phone feature. I looked for cheaper one first (Beetal & Viewsonic) and due to screen display qulaity I dropped both. Then I looked HTC flyer & Huwei Media Pad but both don't have phone feature). I saw samsung P1000 with my requirement but it is not available now.......Then 2 weeks before I saw this Flipkart & without seeing physically I ordered the same in last wee. Now it is in my hand & started use it. Hence Antroid software & samsung hardware is new to me I have some initial difficulties (so for I used symbian software & Nokia hardwares, but I hope it will be OK after using some times... I installed Newshunt application but it is not working in my Tab (I checked the same in Samsung p1000 its working fine.",
+		"publishDate" : "25 January, 2012",
+	    "user" : "R Kamaraj",
+	    "ratings" : "5" 
+	}],
+
+"comparisons" : [
+	{
+		"name" : "Amazon",
+		"totalRatings" : "145",
+		"ratings" : "5",
+		"totalReviews" : "302",
+		"price" : "$240.50",
+		"url" : "http://www.amazon.com/Samsung-Galaxy-Tab-7-Inch-Wi-Fi/dp/B007P4VOWC/ref=sr_1_1?ie=UTF8&qid=1341313881&sr=8-1&keywords=samsung+galaxy+tab"
+	},
+	{
+		"name" : "Barne & Noble",
+		"totalRatings" : "157",
+		"ratings" : "4",
+		"totalReviews" : "5",
+		"price" : "$257",
+		"url" : "http://www.barnesandnoble.com/p/samsung-galaxy-tab-2-7-8-gb-slate-tablet-1-ghz-titanium-silver/24105136?ean=635753498301"
+	},
+	{
+		"name" : "Flipkart",
+		"totalRatings" : "13",
+		"ratings" : "5",
+		"totalReviews" : "4",
+		"price" : "Rs.22900",
+		"url" : "http://www.flipkart.com/samsung-galaxy-tab-620/p/itmd5mjvdghkfbhz?pid=TABD5MJVQNGEFQNF&ref=adaa0d6f-0146-4267-a51e-8cc6f78132e2"
+	}]
+},
+{
+"name" : "Samsung Galaxy S3",
+"author" : "Samsung Electronics",
+"type" : "2",
+"description" : "Samsung is known for smartphones with trendy designs and user-friendly features, but this time they have spared no expense and are bent on beating their own record. Be prepared to enjoy an amazing blend of style, performance and features on the Samsung Galaxy S3. Powered by a 1.4 GHz Quad Core processor, the S3 is based on the Android v4 (Ice Cream Sandwich) operating system. The refined OS promises simplicity and sensibility and you can enjoy easy multitasking, rich notifications, customizable home screens, resizable widgets and easy interactivity. The Samsung S3 comes with a 4.8-inch HD, capacitive touchscreen that supports 720 x 1280 pixel resolution with 16 M colours and Mali-400 megapixel graphics. The TouchWiz user interface is custom built for the Android OS, making this smartphone versatile and easy to use. The user-friendliness of the smartphone is taken up a notch with the S Voice feature that allows you to simply talk to your phone to give instructions. You can ask the S3 to turn off the alarm, reject or answer a call, turn the music up or down, or even tell the camera when to shoot. No matter where you go you are always prepared to capture some unforgettable moments in sharp and vivid colors on the Galaxy S3's 8 megapixel camera with LED flash. Taking pictures is made even more enjoyable with useful camera features like Geo-tagging, face and smile detection, auto focus and image editor. The S3 comes with a secondary camera that is located on the front of the camera. You can enjoy HD video recording on the Galaxy S3 and shoot videos at 30 fps with 1280 x 720 pixel resolution.",
+"ratings" : "3.5",
+"price" : "38900",
+"imageUrl" : "images/samsung-galaxy.jpg",
+"reviewCount" : "5",
+"reviews" : [
+	{ "heading" : "Not the best Value for Money... Time to give a little love to HTC...", 
+	  "description" : "Samsung is slipping... Samsung has done a bad job with S3 this year. The design is uninspiring. Specs which were Samsung's USP have also been diluted possibly due to the weak Android competition esp from HTC and Motorola. LG is always plagued with software issues and confusion. So Samsung followed up the spec-busting S2 with a rather underwhelming S3. My sore points are as below. Firstly sad design...! sadder colors...! 1GB RAM vs 2GB RAM expected 8MP Camera vs 12MP expected 720p Pentile Display vs SuperAmoled Plus FullHDDisplay And unavailability of 32GB or 64GB version Especially the 2GB RAM(available in Canada,US and Korea) is a slap in the face for every Samsung fan in India. Join the protest if you believe in the cause and show your displeasure at every Samsung forum online or otherwise. Samsung is showing why we never should be loyal to a brand and just be objective while analyzing the value for money and features. Unfortunately Samsung may do well again due to weak Android competition. Probably we should favor HTC with some love so that Samsung feels the heat again.",
+	  "publishDate" : "09 June, 2012",
+	  "user" : "TekGru",
+	  "ratings" : "2"
+	},
+	{
+		"heading" : "Words from a long time Blackberry user",
+		"description" : "This phone is an absolute stunner. 4.8 Inch touch screen which is the biggest in its segment (Samsung Note does not count as anything bigger than 5inches counts as a tablet according to the industry). Quad Core processor powers this beast with 1 GB RAM which means you'll never be bothered about the phone slowing down or hanging up. Every review has tested this phone to be the most powerful one available yet, beating all else in every benchmark (including the HTC One X which is also a quad core but a different one apparently). In terms of use, the TouchWiz interface supposedly isn't the best of the Android phones but i do not have any problems with it, as I have just switched over from a Blackberry. Android's Play Store is pretty solid and has a version of almost every good app you can think of from the iTunes App store. The camera quality is brilliant (even though the 8 megapixel count is the same as the Galaxy S2) with several features such as panoramic view, burst mode, different filters. For you email addicts, the gmail app is beautiful. it is probably as good as the bb email services or maybe 5 to 7 seconds slower. In my opinion that really doesnt make as much of a difference. Highly, highly recommended phone. This piece will last you years!", 
+		"publishDate" : "06 June, 2012",
+	    "user" : "R Modi",
+	    "ratings" : "5" 
+	},
+	{
+		"heading" : "Samsung Galaxy S3",
+		"description" : "A wonderful product from Samsung it is just too good. Very very user friendly with immense features it doubles up as a Business phone and an entertainment hub. The capacitative screen is marvellous and the colours are out of this world! The 8 MP camera resolution is very good.",
+		"publishDate" : "01 July, 2012",
+	    "user" : "Aneep C. Philip",
+	    "ratings" : "1" 
+	},
+	{
+		"heading" : "No Qualcomm Snapdragon S4 proccy",
+		"description" : "NO Qualcomm Snapdragon S4 processor for 38900 rupees. Even htc one s is available with Qualcomm Snapdragon S4. Better go for HTC ONE X than Samsung Galaxy SIII. Wastage of money. Its not future proof. Samsung released their Galaxy sIII with Qualcomm Snapdragon S4 processor clocked at 1.5GHz in LTE model, but I don’t think it will release in India. So better go for HTC one X this time.",
+		"publishDate" : "03 July, 2012",
+	    "user" : "Deepak",
+	    "ratings" : "4" 
+	},
+	{
+		"heading" : "Overrated Product",
+		"description" : "Friends i believe this phone is too much overrated, screen is too bright, due to which the white looks creamish and red color oozes out of the screen like blood flowing out of it. The inherent problem of the Samsung screens with bluish greenish display still persist There is nothing great in the camera, as the details are not good, photographs are bright because of the display and it seems good to non technical people as they are amazed by the brightness. Almost all the features are available in other android phone available in S3, except the few, like the screen goes off when eye closes. I believe Sony Xperia S offers much better user experience because of the smaller form factor and greatest of all the display camera, Display is realistic and camera is superb (beyond words). Its now updated to ICS 4.0. I also had a hands on with HTC OneX and LG Optimus 4x HD, screen of both the phones are any day better than the Samsung and come distant close to the BRAVIA Engine based screen of Xperia S.",
+		"publishDate" : "29 June, 2012",
+	    "user" : "Varun",
+	    "ratings" : "2" 
+	}],
+
+"comparisons" : [
+	{
+		"name" : "Amazon",
+		"totalRatings" : "157",
+		"ratings" : "4",
+		"totalReviews" : "29",
+		"price" : "$672.99",
+		"url" : "http://www.amazon.com/Samsung-GT-i9300-Unlocked-Android-Smartphone/dp/B0080DJ6CM/ref=sr_1_1?s=electronics&ie=UTF8&qid=1341314267&sr=1-1&keywords=samsung+galaxy+s3"
+	},
+	{
+		"name" : "Barne & Noble",
+		"totalRatings" : "No",
+		"ratings" : "0",
+		"totalReviews" : "No",
+		"price" : "Pre-order",
+		"url" : "http://www.barnesandnoble.com/w/my-samsung-galaxy-s-iii-steve-schwartz/1111361606?ean=9780789749635"
+	},
+	{
+		"name" : "Flipkart",
+		"totalRatings" : "460",
+		"ratings" : "3.5",
+		"totalReviews" : "82",
+		"price" : "Rs.38900",
+		"url" : "http://www.flipkart.com/samsung-galaxy-s3-mobile-phone/p/itmd9u27nc62hxdz?pid=MOBD9TPHTT8FHJTP&ref=d5b64ad9-ffbf-4f85-a5bd-ae31b45dad98"
+	}]
+}]
+}

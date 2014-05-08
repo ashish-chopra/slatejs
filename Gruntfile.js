@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
 	  
-    distFolder: 'dist',
+    distFolder: 'C:/Desktop/Workspace/Recommendations/WebContent/scripts',
     pkg: grunt.file.readJSON('package.json'),
     
     concat: {
@@ -27,9 +27,9 @@ module.exports = function(grunt) {
     	  },
     	  dist: {
     	    // the files to concatenate
-    	    src: [ "src/core/*.js", 
-    	           "src/sandbox/*.js", 
-    	           "src/modules/*.js" ],
+    	    src: [ "src/sandbox/*.js",  
+    	           "src/core/*.js"],
+    	           /*"src/modules/*.js" ]*/
     	    // the location of the resulting JS file
     	    dest: '<%= distFolder %>/<%= pkg.name %>-v<%= pkg.version %>.js'
     	  }

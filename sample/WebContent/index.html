@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!--
+   This Source Code Form is subject to the terms of the Mozilla Public
+   License, v. 2.0. If a copy of the MPL was not distributed with this
+   file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+
+   This Source Code Form is "Incompatible With Secondary Licenses", as
+   defined by the Mozilla Public License, v. 2.0.
+ -->
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style type="text/css">
+#compare-table td{
+
+border-bottom : 1px solid #cccccc;
+height: 50px;
+vertical-align:middle;
+}
+</style>
+<title>Recommendations | A design Prototype</title>
+<link rel="stylesheet" href="main.css" type="text/css" /> 
+<link rel="shortcut icon" href="images/favicon.gif" />
+<script type="text/javascript" src="scripts/lib/jquery-1.5.2.js"></script>
+<script type="text/javascript" src="scripts/lib/jquery.tmpl.min.js"></script>
+<script type="text/javascript" src="scripts/slate-v0.1.0.js"></script>
+<!-- <script type="text/javascript" src="scripts/script.js"></script> -->
+<script type="text/javascript">
+
+Core.register("notification-module", function(sb) {
+	var text, inputBar, hideButton, 
+		init, destroy;
+	var isLoaded = false;
+	
+	var constMap = {
+			info : "vh-success",
+			error : "vh-error",
+			warning : "vh-warn",
+			hideButton: "&nbsp; &nbsp;<a class='vh-hide' onclick='$(this).parent().remove()'>Hide</a>"
+	};
+	
+	init = function() {
+		if(isLoaded) {
+			destroy();
+		}
+		inputBar = sb.find(".loader");
+		sb.listen('show', showNotifications, this);
+		sb.listen('hide', hideNotifications, this);
+	};
+	
+	destroy = function() {
+		sb.ignore('show', showNotifications);
+		sb.ignore('hide', hideNotifications);
+		inputBar = null;
+		isLoaded = false;
+	};
+	
+	showNotifications = function(evt) {
+		
+		var message = "Loading...";
+		var level, isButton = false;
+		if (evt) {
+			message = evt.message ? evt.message : message;
+			level = evt.level;
+		}
+		var cssClass = "";
+		
+		if (level == 1) {
+			cssClass = constMap.info;
+			isButton = true;
+		} else if (level == 2) {
+			cssClass = constMap.error;
+			isButton = true;
+		} else {
+			cssClass = constMap.warning;
+		}
+		console.log(inputBar);
+		var template = sb.find("<span></span>"); // replace it with createElement()
+		template.append("<b>" + message + "</b>");
+		if (isButton) {
+			template.append(constMap.hideButton);
+			template.attr("class", cssClass);	
+		}
+		inputBar.empty();
+		inputBar.html(template);
+	};
+	hideNotifications = function(evt) {
+		inputBar.empty();
+	}
+	return {
+		init: init,
+		destroy: destroy
+	};
+});
+
+Core.register("search-module", function(sb) {
+	var searchBox, searchButton, searchTemplate, validate,
+		searchType,init, destroy, isLoaded = false;
+	
+	init = function() {
+		if(isLoaded) {
+			destroy();
+		}
+		console.log("inside init")
+		searchBox = sb.find("#search-box");
+		searchType = sb.find("#search-type");
+		searchTemplate = sb.find("#search-template");
+		console.log(searchBox);
+		searchButton = sb.find("#search-button");
+		sb.bind(searchButton, 'click', searchProducts);
+		isLoaded = true;
+	};
+	
+	destroy = function() {
+		sb.unbind(searchButton, 'click', searchProducts);
+		searchBox = searchButton = null;
+		isLoaded = false;
+	};
+	validate = function() {
+		if (sb.trim(searchBox.val()) === ""){
+			sb.notify('show', {message : "Please enter the search item to proceed.", level: 2});
+			return false;
+		}
+		return true;
+	};
+	searchProducts = function(evt) {
+		if(validate()) {
+			sb.notify('show');
+			var keyword = searchBox.val();
+			findItemInProducts(sb.trim(keyword));
+		}
+		console.log("exiting search products");
+	};
+	
+	findItemInProducts = function(keyword) {
+		console.log('inside findIntemInProducts');
+		sb.request({
+			url: "data/data.json",
+			success : function(data) {
+				var index = findInJSON(data, searchType.val(), keyword);
+				sb.notify('hide');
+				if (index != -1) {
+					var content = sb.tmpl(searchTemplate, data.products[index]);
+					sb.notify('render', {content: content});
+				} else {
+					sb.notify('render', { content:"<h4>The searched product is not available.<br/> Try the search with \"All Categories\" type selected. <br/> Note: The current version is the testing version and only few product search is functional. To know more please click on the \"Help\" link on the left side.</h4>"});
+				}
+			}
+		});
+	};
+
+	findInJSON = function(data, type, text) {
+		var items = data.products;
+		for(var i = 0; i < items.length; i++) {
+			var data = items[i];
+			if(data.name.toLowerCase().indexOf(text.toLowerCase()) != -1){
+				if(type == 0 || type == data.type){
+					return i;
+				}
+			}
+		}
+		return -1;
+	};
+	
+	return {
+		init : init,
+		destroy : destroy
+	};
+});
+
+Core.register("rendering-module", function(sb){
+	var init, destroy, contentPane, isLoaded = false;
+	init = function() {
+		if(isLoaded) {
+			destroy();
+		}
+		contentPane = sb.find("#content-pane");
+		sb.listen('render', renderOnScreen, this);
+		isLoaded = true;
+	};
+	
+	destroy = function() {
+		sb.ignore('render', renderOnScreen, this);
+		contentPane = null;
+		isLoaded = false;
+	};
+	
+	renderOnScreen = function(data) {
+		contentPane.fadeOut().html(data.content).fadeIn(1000);
+	}
+	return {
+		init : init,
+		destroy: destroy
+	};
+});
+
+Core.register("tabs-module", function(sb) {
+	var init, destroy, links, 
+		isLoaded = false, 
+		activeClass = "sidebar-hover";
+	init = function() {
+		if(isLoaded) {
+			destroy();
+		}
+		links = sb.find(".sidebar li");
+		sb.bind(links, 'click', highlight);
+		renderHelpOnBoot();
+		isLoaded = true;
+	};
+	
+	destroy = function() {
+		isLoaded = false;
+	};
+	
+	renderHelpOnBoot = function() {
+		
+	};
+	highlight = function() {
+		var activeLink = sb.find(this);
+		
+		links.each(function(){
+			if(sb.find(this).hasClass(activeClass))
+				sb.find(this).removeClass(activeClass);
+		});
+		activeLink.addClass(activeClass);
+	};
+	
+	return {
+		init : init,
+		destroy: destroy
+	};
+});
+
+$(document).ready(function(){
+	Core.boot();
+});
+
+</script>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="h">
+			<select id="search-type" class="ss-type">
+				<option value="0">All Categories</option>
+				<option value="1">Books</option>
+				<option value="2">Mobiles & Accessories</option>
+				<option value="3">Television & Video Players</option>
+			</select> 
+			<input type="text" class="ss-text" id="search-box" /> 
+			<input type="button" class="ss-text form-button" value="Search" id="search-button" />
+		</header>
+		<hr class="seperator" />
+		<div class="loader"></div>
+		<div class="content-wrapper">
+			<div class="sidebar">
+				<ul>
+					<li id="home-link" data="0">Home &raquo;</li>
+					<li data="1">Customer Reviews &raquo;</li>
+					<li data="2">Compare &raquo;</li>
+					<li data="4" class="sidebar-hover">Help &raquo;</li>
+				</ul>
+			</div>
+			<div class="main-area" id="content-pane"> </div>
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+</body>
+<script id="search-template" type="text/x-jquery-tmpl">
+<h2 style="margin-bottom:0px;">${name}</h2>
+<span>by - ${author}</span>
+<div class="rating-row">
+<div class="star-rating-bk" style="float:left;">
+<div class="star-rating" style="width:${ratings * 20}%">&nbsp;</div>
+</div> &nbsp;&nbsp;<span><b>${ratings}</b> Ratings | <b>${reviewCount}</b> Reviews</span>
+</div>
+<div>
+<img src="${imageUrl}" alt="${name}" style="float:left; margin-right:10px;"/>
+<p>${description}</p>
+<h1>
+</div>
+</script>
+
+<script id="cr-template" type="text/x-jquery-tmpl">
+<h2 style="margin-bottom:0px; display:inline">${name}</h2>&nbsp;&nbsp;(${reviews.length} Customer Reviews)
+<hr style="border:none; border: 1px solid #cccccc;"/>
+{{if reviews.length != 0}}
+<br/>
+{{each reviews}}
+<div>
+<div style="vertical-align:middle"><h2 style="display:inline">${$value.heading}</h2> - <span><b style="color:#DD4B39;">${$value.user}</b></span> </div>
+<div class="rating-row">
+<div class="star-rating-bk" style="float:left;">
+<div class="star-rating" style="width:${$value.ratings * 20}%">&nbsp;</div>
+</div>&nbsp;&nbsp;<span>|&nbsp;&nbsp;${$value.ratings} stars&nbsp;&nbsp; | &nbsp;&nbsp; ${$value.publishDate}</span> 
+</div>
+<div>${$value.description}</div>
+</div>
+<br/>
+{{/each}}
+{{/if}}
+</script>
+<script id="compare-template" type="text/x-jquery-tmpl">
+<h2 style="margin-bottom:0px; display:inline">${name}</h2>&nbsp;&nbsp;(Comparisons)
+<hr style="border:none; border: 1px solid #cccccc;"/>
+{{if comparisons.length != 0}}
+<br/>
+
+<table id="compare-table">
+<tr>
+<td width="150px"><b>From</b></td>
+<td width="50px"><b>Price</b></td>
+<td width="100px"><b>Stars</b></td>
+<td width="100px"><b>Total Ratings</b></td>
+<td width="200px"><b>Total Customer Reviews</b></td>
+<td width="150px"><b>Link</b></td>
+</tr>
+{{each comparisons}}
+<tr>
+<td>${$value.name}</td>
+<td>${$value.price}</td>
+<td>
+<div class="rating-row">
+<div class="star-rating-bk" style="float:left;">
+<div class="star-rating" style="width:${$value.ratings * 20}%">&nbsp;</div>
+</div>
+</div>
+</td>
+<td>${$value.totalRatings} Ratings</td>
+<td>${$value.totalReviews} Reviews</td>
+<td><a href="${$value.url}" target="_blank">${$value.name}</a></td>
+</tr>
+{{/each}}
+</table>
+
+{{/if}}
+</script>
+</html>

@@ -1,24 +1,35 @@
-var sandbox = function(core) {
-	var ignore, request;
-	
-	return {
+var Sandbox = function(core) {
+	this.core = core;
+};
+
+Sandbox.prototype = {
 		find: function(selector, context) {
-			return core.dom.query(selector, context);
+			return this.core.dom.query(selector, context);
 		},
 		notify: function(topic, data) {
-			core.publish(topic, data);
+			console.log("inside notify");
+			this.core.publish(topic, data);
 		},
-		listen: function(topic, data) {
-			core.subscribe(topic, data);
+		listen: function(topic, fn) {
+			this.core.subscribe(topic, fn);
 		},
 		bind: function(element, evt, fn) {
-			core.dom.bind(element, evt, fn);
+			this.core.dom.bind(element, evt, fn);
 		},
 		unbind: function(element, evt, fn) {
-			core.dom.unbind(element, evt, fn);
+			this.core.dom.unbind(element, evt, fn);
 		},
-		ignore: ignore,
-		request: request
-	};
-	
+		ignore: function(topic) {
+			
+		},
+		request: function(options) {
+			this.core.request(options);
+		},
+		trim : function(input) {
+			return this.core.dom.trim(input);
+		},
+		tmpl : function(template, data) {
+			return this.core.tmpl(template, data);
+		}
 };
+
