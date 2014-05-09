@@ -37,6 +37,61 @@ Application core is the heart of the framework that abstracts the base libraries
 #### 4. Plug-ins
 Plugins is a utility provided along with the framework. As a hackathon idea, Slate.js does not provide  all the features that a developer wish to use. So if any moment you found that some API is missing, you can write your plugins and plug it with the framework.
 
+API Documentation
+-------------------------
+
+In order to use this framework, you must be well equipped with the APIs first. Please find a detailed description as a quick-start tutorial to get you started:
+
+#### 1. Modules
+Any module is represented by a creator function along with moduleId registered with the application core as given:
+
+     Core.register("sample-module", function(sb) {
+        
+        // module level tasks are performed here
+        // for detailed infromation on module, 
+        // check out the samples in the code.
+        
+        return {
+            init : function() {},
+            destroy : function() {}
+        };
+        
+     });
+
+Each module has a `moduleId` given as first parameter to `Core.register()` method; and seconf parameter is the `creator` function that creates the module. Each creator function must have `init()` and `destroy()` public methods to manage the module's lifecycle. Each creator method takes the `sandbox` object as input parameter, which is provided by Core.
+
+#### 2. Sandbox
+A sandbox is implemented as class, which can be instantiated as,
+
+     var sb = new Sandbox(Core);
+     
+A sandbox object takes `Core` as an input to initialise the sandbox. Sandbox provides following public APIs, which modules can call to:
+
+1. sb.find(selector, context)
+2. sb.bind(element, event, fn)
+3. sb.unbind(element, event, fn)
+4. sb.notify(topic, data)
+5. sb.listen(topic, fn, context)
+6. sb.ignore(topic)
+6. sb.trim(str)
+7. sb.tmpl(template, data)
+8. sb.request(options)
+
+#### 3. Core
+Application core provided management functions to manage the lifecycle of modules, carrying out communication among them and connecting with server etc.
+
+1. Core.register(moduleId, creator)
+2. Core.start(moduleId)
+3. Core.startAll()
+4. Core.stop(moduleId)
+5. Core.stopAll()
+6. Core.boot()
+7. Core.dom.query(selector, context)
+8. Core.request(options)
+9. Core.ignore(topic)
+10. Core.publish(topic, data)
+11. Core.listen(topic, fn, context)
+
 
 I found a bug/new feature!
 ---------------------------
