@@ -157,14 +157,12 @@ var Core = (function() {
 		}
 		var method = options.method || "GET";
 		var dataType = options.dataType || "json";
-		
 		$.ajax({
 			url : options.url,
 			type: method,
 			dataType: dataType,
 			success: options.success
 		});
-		
 	};
 	
 	tmpl = function(template, data) {
