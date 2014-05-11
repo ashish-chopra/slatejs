@@ -3,6 +3,15 @@ Slate.js
 
 Slate.js is a web framework written in JavaScript to develop modular HTML5 applications. The most of the design decisions are based on my own personal experience with designing single-page web applications. (If you don't know what are Single Page Web apps, then watch your Gmail account or Google Maps page online). Along with this I taken some polished suggestions and improvements from the Nicolas Zakas research on developing web application framework in javaScript.
 
+Currently Active Version
+-------------------------
+The branch that you are looking at is a `master` branch. 
+It is the active development branch from which you can create a nightly builds.
+
+For stable release, checkout the branch with name "release-v<version-number>" (eg: release-v0.1.0 or release-v0.1.1 etc) and build it. You can also see the release note for the version in [Wiki](https://github.com/ashish-chopra/slatejs/wiki).
+
+FYI: release-v-0.1.0 is the vanilla hackathon release version. If you are interested to hack it from there on, then its all yours!!!
+
 
 How to build it?
 -----------------------
