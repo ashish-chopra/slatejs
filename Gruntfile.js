@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
 	  
-    distFolder: 'C:/Desktop/Workspace/Recommendations/WebContent/scripts',
+    distFolder: '/sample/WebContent/scripts',
     pkg: grunt.file.readJSON('package.json'),
     
     concat: {
