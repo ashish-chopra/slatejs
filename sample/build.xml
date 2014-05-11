@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
-<project name="Fiddle - Visualize Information from data!" default="deploy-webapp" basedir=".">
+<project name="Recommendations - Sample gallery for Slate.js" default="deploy-webapp" basedir=".">
 	<property file="build.properties" />
 	<property name="app.name"          value="Recommendations" />
 	<property name="app.path"          value="/${app.name}" />
-	<property name="app.version"       value="0.1-dev" />
+	<property name="app.version"       value="0.1.1" />
 	<property name="build.home"        value="${basedir}/build" />
 	<property name="dist.home"         value="${basedir}/dist" />
 	<property name="docs.home"         value="${basedir}/docs" />
@@ -76,7 +76,7 @@
 		</copy>
 	</target>
 
-	<target name="deploy-webapp" depends="compile" description="deploy webapp on application as directory">
+	<target name="deploy-webapp" description="deploy webapp on application as directory without compiling required">
 		<mkdir dir="${deploy-webapp.dir}"/>
 		<copy todir="${deploy-webapp.dir}">
 			<fileset dir="${web.home}"  />
