@@ -11,6 +11,8 @@ The branch that you are looking at is a `master` branch. It is the active develo
 
 `release-v-0.1.0` is the **vanilla hackathon 2014** release version. If you are interested to hack it from there on, then its all yours!!!
 
+The sample demo is also hosted [here](https://dl.dropboxusercontent.com/u/88867846/Slatejs/demo/index.html).
+
 
 How to build it?
 -----------------------
