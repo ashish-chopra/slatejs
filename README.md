@@ -36,11 +36,19 @@ Architecture Overview
 ---------------------------
 The architecture of this framework is shown in the diagram below:
 
+![alt text](https://raw.githubusercontent.com/ashish-chopra/slatejs/master/sample/WebContent/images/architecture.png)
+
 On the web page, we have our base libraries like jQuery, dojo, mootools etc. These libraries are then stacked by the Application core of Slate.js framework. Application core is exposed to different modules via a consistent interface called Sandbox. The sandbox interface remains same irrespective of any base library used. This gives us an easy way to replace exisiting base library with another without braking the whole applications. The main components of the framework are summarised below.
 
 
 #### 1. Modules
 Module is a basic unit of this framework. Every functionality on the client side will be designed as a module. Each module can start, stop, initialize each module. Each module is a cohesive unit that encapsulates all the DOM, Javascript, server connectivity into it. In order to provide loose coupling, modules communicate with each other using   publish subscribe mechanism which is faciliated by Application core.
+
+The modules are highlighted in the sample application as shown below:
+
+![alt text](https://raw.githubusercontent.com/ashish-chopra/slatejs/master/sample/WebContent/images/demo-app.png)
+
+The demo application can be accessed [here](https://dl.dropboxusercontent.com/u/88867846/Slatejs/demo/index.html)
 
 #### 2. Sandbox
 Sandox is the playground for the modules to play. Modules are allowed only to call their own methods or call methods on sandobx. Sandbox provides an application interface to the modules to access core of the framework.
