@@ -34,6 +34,10 @@ TO know more about Architecture and APIs and sample application, keep reading !!
 
 Architecture Overview
 ---------------------------
+The architecture of this framework is shown in the diagram below:
+
+On the web page, we have our base libraries like jQuery, dojo, mootools etc. These libraries are then stacked by the Application core of Slate.js framework. Application core is exposed to different modules via a consistent interface called Sandbox. The sandbox interface remains same irrespective of any base library used. This gives us an easy way to replace exisiting base library with another without braking the whole applications. The main components of the framework are summarised below.
+
 
 #### 1. Modules
 Module is a basic unit of this framework. Every functionality on the client side will be designed as a module. Each module can start, stop, initialize each module. Each module is a cohesive unit that encapsulates all the DOM, Javascript, server connectivity into it. In order to provide loose coupling, modules communicate with each other using   publish subscribe mechanism which is faciliated by Application core.
