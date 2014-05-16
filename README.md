@@ -7,11 +7,13 @@ Slate.js is a web framework written in JavaScript to develop modular HTML5 appli
 Current Release
 ----------------------------
 
-The branch that you are looking at is a `master` branch. It is the active development branch from which you can create a nightly builds. For stable release, checkout the branch with name `release-v<version-number>` (eg: `release-v0.1.0` or `release-v0.1.1` etc) and build it. You can also see the release note for the version in [Wiki](https://github.com/ashish-chopra/slatejs/wiki).
+Latest Release: 0.1.0
+Release date: 16 may, 2014
 
+The branch that you are looking at is a `master` branch. It is the active development branch from which you can create a nightly builds. For stable release, checkout Releases section at the top. Releases are tagged as `release-v<version-number>` (eg: `release-v0.1.0` or `release-v0.1.1` etc) and build it. You can also see the release note for the version in [Wiki](https://github.com/ashish-chopra/slatejs/wiki).
+
+NOTE:
 `release-v-0.1.0` is the **vanilla hackathon 2014** release version. If you are interested to hack it from there on, then its all yours!!!
-
-The sample demo is also hosted [here](https://dl.dropboxusercontent.com/u/88867846/Slatejs/demo/index.html).
 
 
 How to build it?
@@ -19,12 +21,12 @@ How to build it?
 
 In order to use it directly from source, you may first require to build it. It's fun and easy to build a library from a source on your own machine and use it!! For this, you may need to install Node.js on your machine. and then clone the project:
 
-    >$ git clone https://github.com/ashish-chopra/slatejs.git
+    > git clone https://github.com/ashish-chopra/slatejs.git
 
 Then browse to `slatejs` folder in command line and then type
 
-    >$ npm install -g grunt-cli
-    >$ npm install
+    > npm install -g grunt-cli
+    > npm install
 
 This will install grunt task runner cli and all the project dependencies.
 Once done, fire a command `grunt`; this will build the file in `dist/` directory.
@@ -48,7 +50,7 @@ The modules are highlighted in the sample application as shown below:
 
 ![alt text](https://raw.githubusercontent.com/ashish-chopra/slatejs/master/sample/WebContent/images/demo-app.png)
 
-The demo application can be accessed [here](https://dl.dropboxusercontent.com/u/88867846/Slatejs/demo/index.html)
+The live version of demo application is accessible [here](https://dl.dropboxusercontent.com/u/88867846/Slatejs/demo/index.html).
 
 #### 2. Sandbox
 Sandox is the playground for the modules to play. Modules are allowed only to call their own methods or call methods on sandobx. Sandbox provides an application interface to the modules to access core of the framework.
