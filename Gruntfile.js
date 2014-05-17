@@ -16,30 +16,40 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
 	  
-    distFolder: '/sample/WebContent/scripts',
     pkg: grunt.file.readJSON('package.json'),
-    
+    srcFolders: [],
     concat: {
     	  options: {
     	    // define a string to put between each file in the concatenated output
     	    separator: "\n\n",
-            banner: "/*\n* Slate.js\n*\n*\n* Copyright (c) 2014 'Ashish Chopra'\n* Licensed under the MIT license.\n*/\n\n"
+            banner: "/*\n* Slate.js\n*\n*\n* Copyright (c) 2014 'Ashish Chopra'\n* Licensed under the BSD license.\n*/\n\n"
     	  },
     	  dist: {
-    	    // the files to concatenate
-    	    src: [ "src/sandbox/*.js",  
-    	           "src/core/*.js"],
-    	           /*"src/modules/*.js" ]*/
-    	    // the location of the resulting JS file
-    	    dest: '<%= distFolder %>/<%= pkg.name %>-v<%= pkg.version %>.js'
-    	  }
-    	}
+    	    src: ["src/sandbox/*.js", "src/core/*.js"],
+    	    dest: 'dist/<%= pkg.name %>-v<%= pkg.version %>.js'
+    	  },
+        basic: {
+          src: ["src/sandbox/*.js", "src/core/*.js"],
+          dest: 'sample/WebContent/scripts/slate-demo.js'
+        },
+        extras: {
+          src: ["src/sandbox/*.js", "src/core/*.js"],
+          dest: 'test/lib/slate-test.js'
+        }
+    	},
+
+    qunit: {
+        options: {
+
+        }
+    }
   });
 
   // We've set up each task's configuration.
   // Now actually load the tasks.
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-qunit');
 
   // Register our own custom task alias.
-  grunt.registerTask('default', ['concat']);
+  grunt.registerTask('default', ['concat', 'qunit']);
 };
